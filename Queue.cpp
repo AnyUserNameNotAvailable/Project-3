@@ -1,4 +1,4 @@
-#include "Queue_hpp"
+#include "Queue.hpp"
 #include <iostream>
 
 bool BinaryQueue::isempty(){
@@ -32,9 +32,6 @@ void BinaryQueue::displayQueue() const {
     while (nodePtr) {
         std::cout << nodePtr->val;
         nodePtr = nodePtr->next;
-        if (nodePtr) {
-            std::cout << ".";
-        }
     }
     std::cout << std::endl;
 }
