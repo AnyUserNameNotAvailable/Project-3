@@ -14,7 +14,7 @@ void BinaryQueue::deQueue(int &value){
         delete temp;
     }
 }
-void BinaryQueue::enqueue(int value) {
+void BinaryQueue::enQueue(int value) {
     QueueNode* newNode = new QueueNode;
     newNode->val = value;
     newNode->next = nullptr;
@@ -37,4 +37,10 @@ void BinaryQueue::displayQueue() const {
         }
     }
     std::cout << std::endl;
+}
+void BinaryQueue::clear() {
+    while (!isempty()) {
+        int value;
+        deQueue(value);
+    }
 }

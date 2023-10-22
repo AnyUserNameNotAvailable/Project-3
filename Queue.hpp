@@ -23,5 +23,6 @@ public:
     void deQueue(int&);
     void displayQueue() const;
     bool isempty();
+    void clear();
 };
 #endif /* Queue_hpp */
