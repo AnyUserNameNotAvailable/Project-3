@@ -19,7 +19,7 @@ public:
         clear();
     }
     void push(int);
-    void pop(int);
+    void pop();
     int peek() const;
     void displayStack() const;
     void clear();
