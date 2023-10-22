@@ -23,8 +23,6 @@ public:
     int peek() const;
     void displayStack() const;
     void clear();
-    };
-
 };
 
 #endif /* Stack_hpp */
