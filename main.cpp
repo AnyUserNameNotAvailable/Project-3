@@ -52,7 +52,7 @@ void convertAndEnqueue(BinaryQueue &Q, double decimal, int precision) {
     } else {
         decimal *= 2;
         int bit = static_cast<int>(decimal);
-        Q.enqueue(bit);
+        Q.enQueue(bit);
         decimal -= bit;
         convertAndEnqueue(Q, decimal, precision - 1);
     }
