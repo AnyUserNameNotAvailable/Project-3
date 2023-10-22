@@ -7,7 +7,7 @@ void BinaryStack::push(int value){
     newNode->next = top;
     top = newNode;
 }
-void BinaryStack::pop(int value){
+void BinaryStack::pop(){
     if (top != nullptr){
         StackNode *temp = top;
         top = top->next;
